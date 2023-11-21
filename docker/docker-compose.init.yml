@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  next-app-init:
+    user: "${DOCKER_USER_UID}:${DOCKER_USER_GID}"
+    build:
+      context: "${DOCKERFILE_DIRECTORY}"
+      dockerfile: "Dockerfile"
+    volumes:
+      - "${PARENT_DIRECTORY}:/src"
+    command: "npx create-next-app@latest ${PROJECT_DIRECTORY}"

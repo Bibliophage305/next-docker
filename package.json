@@ -1,0 +1,18 @@
+{
+  "name": "next-docker",
+  "version": "0.0.1",
+  "description": "A preconfigured docker environment and cli tool for managing next.js projects",
+  "main": "index.js",
+  "bin": {
+    "next-docker": "bin/index.mjs"
+  },
+  "author": "Chris Hampson",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github:Bibliophage305/next-docker"
+  }
+}
